@@ -4,7 +4,7 @@
   "description": "React SVG Progress Circle",
   "main": "src/Checkbox.js",
   "scripts": {
-    "test": "./node_modules/jest-cli/bin/jest.js src/ --verbose --coverage",
+    "test": "./node_modules/jest-cli/bin/jest.js src/ --visual --coverage",
     "build": "grunt build"
   },
   "repository": {
@@ -39,6 +39,7 @@
     "jit-grunt": "^0.9.1",
     "package-banner": "^0.1.0",
     "react": "^0.14.0-rc1",
+    "react-addons-test-utils": "^0.14.0-rc1",
     "webpack": "^1.12.1",
     "webpack-dev-server": "^1.10.1"
   },
