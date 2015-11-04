@@ -2,7 +2,7 @@
   "name": "react-ship-progress-circle",
   "version": "0.1.0",
   "description": "React SVG Progress Circle",
-  "main": "src/Checkbox.js",
+  "main": "dist/ProgressCircle.js",
   "scripts": {
     "test": "./node_modules/jest-cli/bin/jest.js src/ --visual --coverage",
     "build": "grunt build"

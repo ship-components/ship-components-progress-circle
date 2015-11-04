@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
       // Where to output
       output: {
-        path: './es5',
+        path: './dist',
         filename: '[name].js',
         libraryTarget: 'commonjs2'
       },
