@@ -1,15 +1,15 @@
 {
-  "name": "react-ship-progress-circle",
+  "name": "ship-components-progress-circle",
   "version": "0.1.0",
   "description": "React SVG Progress Circle",
-  "main": "dist/ProgressCircle.js",
+  "main": "src/ProgressCircle.jsx",
   "scripts": {
     "test": "./node_modules/jest-cli/bin/jest.js src/ --visual --coverage",
     "build": "grunt build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ship-components/react-ship-progress-circle.git"
+    "url": "git+https://github.com/ship-components/ship-components-progress-circle.git"
   },
   "keywords": [
     "react"
@@ -17,9 +17,9 @@
   "author": "Isaac Suttell",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ship-components/react-ship-progress-circle/issues"
+    "url": "https://github.com/ship-components/ship-components-progress-circle/issues"
   },
-  "homepage": "https://github.com/ship-components/react-ship-progress-circle#readme",
+  "homepage": "https://github.com/ship-components/ship-components-progress-circle#readme",
   "devDependencies": {
     "babel-core": "^5.8.24",
     "babel-eslint": "^4.1.2",
