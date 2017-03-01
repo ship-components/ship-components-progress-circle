@@ -1,15 +1,15 @@
 /*!
- *                               __                   .__    .__                                                                                         .__               .__          
- * _______   ____ _____    _____/  |_            _____|  |__ |__|_____           _____________  ____   ___________   ____   ______ ______           ____ |__|______   ____ |  |   ____  
- * \_  __ \_/ __ \\__  \ _/ ___\   __\  ______  /  ___/  |  \|  \____ \   ______ \____ \_  __ \/  _ \ / ___\_  __ \_/ __ \ /  ___//  ___/  ______ _/ ___\|  \_  __ \_/ ___\|  | _/ __ \ 
- *  |  | \/\  ___/ / __ \\  \___|  |   /_____/  \___ \|   Y  \  |  |_> > /_____/ |  |_> >  | \(  <_> ) /_/  >  | \/\  ___/ \___ \ \___ \  /_____/ \  \___|  ||  | \/\  \___|  |_\  ___/ 
- *  |__|    \___  >____  /\___  >__|           /____  >___|  /__|   __/          |   __/|__|   \____/\___  /|__|    \___  >____  >____  >          \___  >__||__|    \___  >____/\___  >
- *              \/     \/     \/                    \/     \/   |__|             |__|               /_____/             \/     \/     \/               \/                \/          \/ 
- * react-ship-progress-circle 0.1.0
+ *        .__    .__                                                                          __                                                                                           .__               .__          
+ *   _____|  |__ |__|_____             ____  ____   _____ ______   ____   ____   ____   _____/  |_  ______         _____________  ____   ___________   ____   ______ ______           ____ |__|______   ____ |  |   ____  
+ *  /  ___/  |  \|  \____ \   ______ _/ ___\/  _ \ /     \\____ \ /  _ \ /    \_/ __ \ /    \   __\/  ___/  ______ \____ \_  __ \/  _ \ / ___\_  __ \_/ __ \ /  ___//  ___/  ______ _/ ___\|  \_  __ \_/ ___\|  | _/ __ \ 
+ *  \___ \|   Y  \  |  |_> > /_____/ \  \__(  <_> )  Y Y  \  |_> >  <_> )   |  \  ___/|   |  \  |  \___ \  /_____/ |  |_> >  | \(  <_> ) /_/  >  | \/\  ___/ \___ \ \___ \  /_____/ \  \___|  ||  | \/\  \___|  |_\  ___/ 
+ * /____  >___|  /__|   __/           \___  >____/|__|_|  /   __/ \____/|___|  /\___  >___|  /__| /____  >         |   __/|__|   \____/\___  /|__|    \___  >____  >____  >          \___  >__||__|    \___  >____/\___  >
+ *      \/     \/   |__|                  \/            \/|__|               \/     \/     \/          \/          |__|               /_____/             \/     \/     \/               \/                \/          \/ 
+ * ship-components-progress-circle 0.1.0
  * Description: React SVG Progress Circle
  * Author: Isaac Suttell
- * Homepage: https://github.com/ship-components/react-ship-progress-circle#readme
- * Bugs: https://github.com/ship-components/react-ship-progress-circle/issues
+ * Homepage: https://github.com/ship-components/ship-components-progress-circle#readme
+ * Bugs: https://github.com/ship-components/ship-components-progress-circle/issues
  * License: MIT
  */
 module.exports =
@@ -72,7 +72,7 @@ module.exports =
 
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-	var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+	var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
