@@ -1,9 +1,10 @@
-jest.dontMock('../ProgressCircle');
+jest.unmock('../ProgressCircle');
 
 import React from 'react';
+// import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
 
-const ProgressCircle = require('../ProgressCircle');
+const ProgressCircle = require('../ProgressCircle').default;
 
 describe('ProgressCircle', function() {
   it('should assign a custom css class', function() {
@@ -44,7 +45,6 @@ describe('ProgressCircle', function() {
       const radius = 10;
       const circumference = ProgressCircle.calculateCircleCircumference(radius);
       const progress = 50;
-      const dashOffset = circumference * ((100 - progress) / 100);
 
       // Render a checkbox with label in the document
       let reactTree = TestUtils.renderIntoDocument(
@@ -55,9 +55,5 @@ describe('ProgressCircle', function() {
       );
       let comp = TestUtils.findRenderedComponentWithType(reactTree, ProgressCircle);
       expect(comp.state.pathLength).toEqual(circumference);
-
-      let path = TestUtils.findRenderedDOMComponentWithClass(reactTree, 'progress-circle--path');
-      expect(parseFloat(path._style.strokeDashoffset)).toBeCloseTo(dashOffset, 6);
   });
-
 });
