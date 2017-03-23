@@ -5,9 +5,9 @@
  *  \___ \|   Y  \  |  |_> > /_____/ \  \__(  <_> )  Y Y  \  |_> >  <_> )   |  \  ___/|   |  \  |  \___ \  /_____/ |  |_> >  | \(  <_> ) /_/  >  | \/\  ___/ \___ \ \___ \  /_____/ \  \___|  ||  | \/\  \___|  |_\  ___/ 
  * /____  >___|  /__|   __/           \___  >____/|__|_|  /   __/ \____/|___|  /\___  >___|  /__| /____  >         |   __/|__|   \____/\___  /|__|    \___  >____  >____  >          \___  >__||__|    \___  >____/\___  >
  *      \/     \/   |__|                  \/            \/|__|               \/     \/     \/          \/          |__|               /_____/             \/     \/     \/               \/                \/          \/ 
- * ship-components-progress-circle 0.1.0
+ * ship-components-progress-circle 0.2.0
  * Description: React SVG Progress Circle
- * Author: Isaac Suttell
+ * Author: Isaac Suttell <isaac@isaacsuttell.com>
  * Homepage: https://github.com/ship-components/ship-components-progress-circle#readme
  * Bugs: https://github.com/ship-components/ship-components-progress-circle/issues
  * License: MIT
@@ -59,57 +59,50 @@ module.exports =
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/**
-	 * ProgressCircle
-	 * @file SVG Circle Indicating Definite Progress
-	 */
-
 	'use strict';
 
-	Object.defineProperty(exports, '__esModule', {
+	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var ProgressCircle = (function (_React$Component) {
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * ProgressCircle
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @file SVG Circle Indicating Definite Progress
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+	var ProgressCircle = function (_React$Component) {
 	  _inherits(ProgressCircle, _React$Component);
 
 	  /**
 	   * Build the initial <path> when we build the component
 	   * @param  {Object} props
 	   */
-
 	  function ProgressCircle(props) {
 	    _classCallCheck(this, ProgressCircle);
 
-	    _get(Object.getPrototypeOf(ProgressCircle.prototype), 'constructor', this).call(this, props);
+	    var _this = _possibleConstructorReturn(this, (ProgressCircle.__proto__ || Object.getPrototypeOf(ProgressCircle)).call(this, props));
 
-	    this.state = this.calculatePathState(props);
+	    _this.state = _this.calculatePathState(props);
+	    return _this;
 	  }
-
-	  /**
-	   * Default props
-	   * @static
-	   * @type {Object}
-	   */
 
 	  /**
 	   * Update the SVG Path if the props change
 	   * @param  {Object} nextProps
 	   */
+
 
 	  _createClass(ProgressCircle, [{
 	    key: 'componentWillReceiveProps',
@@ -124,10 +117,11 @@ module.exports =
 	     * @param  {Object} props
 	     * @return {Object}
 	     */
+
 	  }, {
 	    key: 'calculatePathState',
 	    value: function calculatePathState() {
-	      var props = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+	      var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
 	      return {
 	        path: ProgressCircle.generateSvgPathString(props.radius, props.strokeWidth),
@@ -137,7 +131,7 @@ module.exports =
 	  }, {
 	    key: 'renderBackground',
 	    value: function renderBackground() {
-	      return _react2['default'].createElement('path', {
+	      return _react2.default.createElement('path', {
 	        className: 'progress-circle--background',
 	        d: this.state.path,
 	        fill: 'none',
@@ -149,6 +143,7 @@ module.exports =
 	     * Render
 	     * @return {React}
 	     */
+
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -175,17 +170,17 @@ module.exports =
 	        strokeDashoffset: this.state.pathLength * ((100 - this.props.progress) / 100) + 'px'
 	      };
 
-	      return _react2['default'].createElement(
+	      return _react2.default.createElement(
 	        'div',
 	        { className: (this.props.className ? this.props.className + ' ' : '') + 'progress-circle' },
-	        _react2['default'].createElement(
+	        _react2.default.createElement(
 	          'svg',
 	          {
 	            className: 'progress-circle--svg',
 	            width: dimension,
 	            height: dimension },
 	          this.props.background ? this.renderBackground() : null,
-	          _react2['default'].createElement('path', {
+	          _react2.default.createElement('path', {
 	            className: 'progress-circle--path',
 	            transform: pathTransform,
 	            style: pathStyles,
@@ -201,9 +196,16 @@ module.exports =
 	  }]);
 
 	  return ProgressCircle;
-	})(_react2['default'].Component);
+	}(_react2.default.Component);
 
-	exports['default'] = ProgressCircle;
+	/**
+	 * Default props
+	 * @static
+	 * @type {Object}
+	 */
+
+
+	exports.default = ProgressCircle;
 	ProgressCircle.defaultProps = {
 	  radius: 10,
 	  strokeWidth: 10,
@@ -218,12 +220,12 @@ module.exports =
 	 * @type {Object}
 	 */
 	ProgressCircle.propTypes = {
-	  radius: _react2['default'].PropTypes.number,
-	  strokeWidth: _react2['default'].PropTypes.number,
-	  progress: _react2['default'].PropTypes.number.isRequired,
-	  className: _react2['default'].PropTypes.string,
-	  stroke: _react2['default'].PropTypes.string,
-	  backgroundStroke: _react2['default'].PropTypes.string
+	  radius: _react2.default.PropTypes.number,
+	  strokeWidth: _react2.default.PropTypes.number,
+	  progress: _react2.default.PropTypes.number.isRequired,
+	  className: _react2.default.PropTypes.string,
+	  stroke: _react2.default.PropTypes.string,
+	  backgroundStroke: _react2.default.PropTypes.string
 	};
 
 	/**
@@ -258,7 +260,6 @@ module.exports =
 	ProgressCircle.calculateCircleCircumference = function calculateCircleCircumference(radius) {
 	  return 2 * Math.PI * radius;
 	};
-	module.exports = exports['default'];
 
 /***/ },
 /* 1 */
