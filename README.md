@@ -12,7 +12,7 @@
 The component is written using ES6/JSX therefore Babel is required to directly use it. The below example is based on using [webpack](http://webpack.github.io/) and [babel-loader](https://github.com/babel/babel-loader).
 ```js
 import React from 'react';
-import ProgressCircle from 'react-ship-progress-circle';
+import ProgressCircle from 'ship-components-progress-circle';
 
 export default class Status extends React.Component {
   render() {
@@ -56,7 +56,7 @@ Below are is a sample of how to setup webpack:
       {
         test: /\.(jsx?|es6)$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel'
+        loader: 'babel-loader'
       }
     ]
   },
@@ -78,7 +78,7 @@ Below are is a sample of how to setup webpack:
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015 Isaac Suttell
+Copyright (c) 2017 Isaac Suttell
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
