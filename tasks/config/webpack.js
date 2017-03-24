@@ -56,7 +56,7 @@ module.exports = function(grunt) {
           {
             test: /\.jsx?|\.es6$/,
             exclude: /(node_modules|bower_components)/,
-            loader: 'babel'
+            loader: 'babel-loader'
           }
         ]
       },
