@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class ProgressCircle extends React.Component {
 
@@ -120,12 +121,12 @@ ProgressCircle.defaultProps = {
  * @type {Object}
  */
 ProgressCircle.propTypes = {
-  radius: React.PropTypes.number,
-  strokeWidth: React.PropTypes.number,
-  progress: React.PropTypes.number.isRequired,
-  className: React.PropTypes.string,
-  stroke: React.PropTypes.string,
-  backgroundStroke: React.PropTypes.string
+  radius: PropTypes.number,
+  strokeWidth: PropTypes.number,
+  progress: PropTypes.number.isRequired,
+  className: PropTypes.string,
+  stroke: PropTypes.string,
+  backgroundStroke: PropTypes.string
 }
 
 /**

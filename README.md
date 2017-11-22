@@ -72,6 +72,7 @@ Below are is a sample of how to setup webpack:
 2. `npm test`
 
 ## History
+* 0.3.0 - Updated Babel to env
 * 0.2.0 - Upgrades to React 15, Adds Travis CI, coveralls and fixes the test script
 * 0.1.0 - Initial
 
