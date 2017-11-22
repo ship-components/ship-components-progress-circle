@@ -3,3 +3,5 @@ node_modules/
 coverage/
 npm-debug.log
 es5/
+*.docker*
+package-lock.json
